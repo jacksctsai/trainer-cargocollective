@@ -1,0 +1,85 @@
+@import compass
+@import compass/reset
+
+$default-font: Arial, Helvetica, sans-serif
+
+#header
+  width: 1020px
+  margin: 0 auto
+
+#header-link
+  background: url( "/img/float-eagle.png" ) no-repeat
+  background-position: bottom right
+  display: block
+  width: 1000px
+  height: 84px
+  padding: 50px 0 0
+
+#title
+  +hide-text
+  background: url( "/img/logo.png" ) no-repeat
+  width: 305px
+  height: 84px
+  margin: 0 auto
+
+#nav
+  +clearfix
+  text-align: center
+  width: 700px
+  padding: 30px
+  margin: 0 auto
+
+.nav-item
+  +inline-block
+  font-family: $default-font
+  padding: 0 10px
+
+.nav-item-link
+  font-size: 13px
+  color: black
+  text-decoration: none
+  &:hover
+    color: gray
+
+#gallary
+  +clearfix
+  width: 1190px
+  margin: 0 auto
+
+.artwork
+  +clearfix
+  +float-left
+  font-family: $default-font
+  font-size: 12px
+  line-height: 20px
+  text-align: center
+  width: 200px
+  height: 205px
+  padding: 10px 15px
+
+.artwork-clip-link
+  +clearfix
+  display: block
+
+.artwork-clip
+  display: block
+  padding: 0 0 6px
+
+.artwork-link
+  color: gray
+  text-decoration: none
+
+.artwork-description
+  text-align: center
+
+#footer
+  font-family: $default-font
+  font-size: 12px
+  text-align: right
+  width: 1190px
+  margin: 0 auto
+  padding: 10px 0 30px
+
+#footer-contact-link
+  color: black
+  text-decoration: none
