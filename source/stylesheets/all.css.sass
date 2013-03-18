@@ -40,6 +40,7 @@ $default-font: Arial, Helvetica, sans-serif
   text-decoration: none
   &:hover
     color: gray
+    border-bottom: 2px solid gray
 
 #gallary
   +clearfix
@@ -47,8 +48,8 @@ $default-font: Arial, Helvetica, sans-serif
   margin: 0 auto
 
 .artwork
-  +clearfix
   +float-left
+  +clearfix
   font-family: $default-font
   font-size: 12px
   line-height: 20px
@@ -60,6 +61,8 @@ $default-font: Arial, Helvetica, sans-serif
 .artwork-clip-link
   +clearfix
   display: block
+  &:hover, &:active
+    opacity: 0.8
 
 .artwork-clip
   display: block
@@ -68,6 +71,8 @@ $default-font: Arial, Helvetica, sans-serif
 .artwork-link
   color: gray
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 .artwork-description
   text-align: center
@@ -83,3 +88,5 @@ $default-font: Arial, Helvetica, sans-serif
 #footer-contact-link
   color: black
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
