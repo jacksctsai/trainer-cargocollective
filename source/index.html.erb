@@ -3,28 +3,28 @@ title: Cargo Collective
 ---
 
 <div id="header">
-  <a href="#" id="header-link" title="Tobeshi">
+  <a id="header-link" href="#" title="Tobeshi">
     <h1 id="title">Tabeshi</h1>
   </a>
 </div>
 <ul id="nav">
-  <li class="nav-item" id="ni-about">
-    <a href="#" class="nav-item-link" title="About Tabeshi">ABOUT</a>
+  <li id="nav-item-about" class="nav-item">
+    <a class="nav-item-link" href="#" title="About Tabeshi">ABOUT</a>
   </li>
-  <li class="nav-item" id="ni-references">
-    <a href="#" class="nav-item-link" title="References">REFERENCES</a>
+  <li id="nav-item-references" class="nav-item">
+    <a class="nav-item-link" href="#" title="References">REFERENCES</a>
   </li>
-  <li class="nav-item" id="ni-twitter">
-    <a href="#" class="nav-item-link" title="Twitter">TWITTER</a>
+  <li id="nav-item-twitter" class="nav-item">
+    <a class="nav-item-link" href="#" title="Twitter">TWITTER</a>
   </li>
-  <li class="nav-item" id="ni-facebook">
-    <a href="#" class="nav-item-link" title="Facebook">FACEBOOK</a>
+  <li id="nav-item-facebook" class="nav-item">
+    <a class="nav-item-link" href="#" title="Facebook">FACEBOOK</a>
   </li>
-  <li class="nav-item" id="ni-subscribe">
-    <a href="#" class="nav-item-link" title="Subscribe to Tabeshi">SUBSCRIBE</a>
+  <li id="nav-item-subscribe" class="nav-item">
+    <a class="nav-item-link" href="#" title="Subscribe to Tabeshi">SUBSCRIBE</a>
   </li>
-  <li class="nav-item" id="ni-blog">
-    <a href="#" class="nav-item-link" title="Blog">BLOG</a>
+  <li id="nav-item-blog" class="nav-item">
+    <a class="nav-item-link" href="#" title="Blog">BLOG</a>
   </li>
 </ul>
 <div id="main">
@@ -32,12 +32,12 @@ title: Cargo Collective
   <% data.artworks.each do |a| %>
   <% i = i + 1 %>
   <div class="artwork">
-    <a href="#" class="artwork-clip-link" title="<%= a[0] %>">
+    <a class="artwork-clip-link" href="#" title="<%= a[0] %>">
       <img class="artwork-clip" src="/img/<%= '%.2d' % i %>.png" alt="<%= a[0] %>">
     </a>
-    <a href="#" class="artwork-link" title="<%= a[0] %>"><%= a[0] %></a>
+    <a class="artwork-link" href="#" title="<%= a[0] %>"><%= a[0] %></a>
     <p class="artwork-description"><%= a[1] %></p>
   </div>
   <% end %>
 </div>
-<div id="footer">Copyright 2006-2011 Emeric TRAHAND. All rights reserved. | <a href="#" id="footer-contact-link" alt="Contact">Contact</a></div>
+<div id="footer">Copyright 2006-2011 Emeric TRAHAND. All rights reserved. | <a id="footer-contact-link" href="#" alt="Contact">Contact</a></div>
